@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'app-with-dockerfile' title`, () => {
+  it(`should have the 'dockerized-angular-app' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('app-with-dockerfile');
+    expect(app.title).toEqual('dockerized-angular-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, app-with-dockerfile');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, dockerized-angular-app');
   });
 });
